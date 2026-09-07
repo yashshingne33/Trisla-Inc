@@ -68,7 +68,7 @@ export default function AgeGate() {
           <button className="btn btn-brown btn-block" onClick={handleConfirm}>I Am of Legal Age to View This Website</button>
           <a href="#" onClick={handleExit} className="btn-ghost" style={{ color: 'rgba(246,241,231,0.6)', textAlign: 'center' }}>Exit Website</a>
         </div>
-        <p className="age-gate-note">Meridian Leaf Exports Pvt. Ltd. supplies tobacco and nicotine products to licensed importers only, for export purposes. This site does not sell to consumers or minors under any circumstance.</p>
+        <p className="age-gate-note">Trisla Inc. supplies tobacco and nicotine products to licensed importers only, for export purposes. This site does not sell to consumers or minors under any circumstance.</p>
       </div>
     </div>
   )

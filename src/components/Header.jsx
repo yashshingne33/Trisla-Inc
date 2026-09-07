@@ -31,7 +31,7 @@ export default function Header() {
       <header className={`site-header${scrolled ? ' is-scrolled' : ''}`}>
         <div className="container header-row">
           <Link to="/" className="logo" onClick={() => setOpen(false)}>
-            <span className="logo-mark"></span>Meridian Leaf <small>Exports</small>
+            <span className="logo-mark"></span>Trisla Inc. <small>Exports</small>
           </Link>
           <nav>
             <ul className={`nav-links${open ? ' is-open' : ''}`}>

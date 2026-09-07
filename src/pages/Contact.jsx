@@ -34,10 +34,10 @@ export default function Contact() {
             <h2 style={{ fontSize: 22, marginBottom: 6 }}>Global Export Office</h2>
             <p style={{ marginBottom: 0 }}>Correspondence and consignment coordination.</p>
             <div style={{ marginTop: 20 }}>
-              <div className="contact-block"><div><h4>Address</h4><p>Meridian Leaf Exports Pvt. Ltd.<br />Industrial Estate Road, Guntur, Andhra Pradesh 522001, India</p></div></div>
+              <div className="contact-block"><div><h4>Address</h4><p>Trisla Inc.<br />Industrial Estate Road, Guntur, Andhra Pradesh 522001, India</p></div></div>
               <div className="contact-block"><div><h4>Phone</h4><p>+91 22 3344 5566</p></div></div>
-              <div className="contact-block"><div><h4>Business Email</h4><p>export@meridianleaf.example</p></div></div>
-              <div className="contact-block"><div><h4>Export Department</h4><p>exports-desk@meridianleaf.example</p></div></div>
+              <div className="contact-block"><div><h4>Business Email</h4><p>export@trisla.example</p></div></div>
+              <div className="contact-block"><div><h4>Export Department</h4><p>exports-desk@trisla.example</p></div></div>
               <div className="contact-block"><div><h4>Business Hours</h4><p>Mon &ndash; Sat, 09:00 &ndash; 18:00 IST</p></div></div>
             </div>
             <div className="map-static">Office location map</div>

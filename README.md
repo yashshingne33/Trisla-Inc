@@ -1,6 +1,6 @@
-# Meridian Leaf Exports — React App
+# Trisla Inc Exports — React App
 
-A React (Vite) rebuild of the Meridian Leaf Exports B2B tobacco trading site,
+A React (Vite) rebuild of the Trisla Inc Exports B2B tobacco trading site,
 preserving all content, styling, and functionality from the static HTML version,
 including your local image swaps in `public/assets/` and your CSS/copy edits.
 

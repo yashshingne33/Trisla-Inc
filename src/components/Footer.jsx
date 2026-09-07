@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-about">
-            <span className="footer-logo">Meridian Leaf</span>
+            <span className="footer-logo">Trisla Inc.</span>
             <p>An India-based export house supplying compliant, laboratory-tested tobacco and nicotine products to licensed importers and distributors across 30+ international markets.</p>
           </div>
           <div>
@@ -49,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; 2026 Meridian Leaf Exports Pvt. Ltd. All rights reserved.</span>
+          <span>&copy; 2026 Trisla Inc. All rights reserved.</span>
           <span className="legal-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms</a>

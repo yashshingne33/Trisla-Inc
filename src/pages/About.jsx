@@ -7,7 +7,7 @@ export default function About() {
       <section className="page-hero">
         <div className="container">
           <div className="breadcrumb"><Link to="/">Home</Link> / About Us</div>
-          <span className="eyebrow">About Meridian Leaf</span>
+          <span className="eyebrow">About Trisla Inc.</span>
           <h1>Twenty-six years of moving Indian tobacco to global markets.</h1>
           <p>A corporate profile of our sourcing footprint, infrastructure and the compliance discipline we bring to every consignment.</p>
         </div>
@@ -18,7 +18,7 @@ export default function About() {
           <div>
             <span className="eyebrow">Our story</span>
             <h2 className="font-display display-lg">Started in the growing belt, built for the shipping lane.</h2>
-            <p>Meridian Leaf was founded in Guntur, in the heart of Andhra Pradesh's tobacco-growing region, with a single conviction: that Indian tobacco could meet the technical demands of any international buyer if the sourcing, processing and documentation were treated as seriously as the crop itself.</p>
+            <p>Trisla Inc. was founded in Guntur, in the heart of Andhra Pradesh's tobacco-growing region, with a single conviction: that Indian tobacco could meet the technical demands of any international buyer if the sourcing, processing and documentation were treated as seriously as the crop itself.</p>
             <p>Over two and a half decades we have expanded from a single processing unit into an integrated export house spanning six product categories, an in-house testing laboratory, and direct relationships with growers across multiple states. What hasn't changed is the standard: every batch is specified, tested and documented before it is offered to a buyer.</p>
           </div>
           <div className="split-media">
@@ -56,7 +56,7 @@ export default function About() {
         <div className="container">
           <div className="section-head">
             <span className="eyebrow">Why global buyers choose us</span>
-            <h2 className="font-display display-lg">Six reasons procurement teams stay with Meridian Leaf.</h2>
+            <h2 className="font-display display-lg">Six reasons procurement teams stay with Trisla Inc.</h2>
           </div>
           <div className="feature-grid" style={{ background: 'var(--line)', borderColor: 'var(--line)' }}>
             <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Reliable Sourcing</h4><p>Multi-region grower relationships that reduce single-harvest risk.</p></div>
