@@ -184,6 +184,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .header-actions .btn { display: none; }
 }
 
+.nav-actions-mobile { display: none; }
+@media (max-width: 900px) {
+  .nav-actions-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+  }
+  .nav-actions-mobile .btn { width: 100%; justify-content: center; }
+}
+
 /* ==========================================================================
    Buttons
    ========================================================================== */
@@ -696,3 +709,72 @@ body.gate-active { overflow: hidden; }
 .mt-0 { margin-top: 0; }
 .text-center { text-align: center; }
 .hidden { display: none !important; }
+
+/* ==========================================================================
+   Responsive fixes patch
+   ========================================================================== */
+
+/* 1. Quality.jsx overrides .split with an inline gridTemplateColumns,
+   which beats the existing .split breakpoint. Force the stack. */
+@media (max-width: 860px) {
+  .split { grid-template-columns: 1fr !important; }
+}
+
+/* 2. RFQ items (thumb + fields + remove button) get cramped on narrow phones */
+@media (max-width: 480px) {
+  .rfq-item { flex-wrap: wrap; }
+  .rfq-item .meta .fields { grid-template-columns: 1fr; }
+  .rfq-remove { margin-left: auto; }
+}
+
+/* 3. Exports.jsx SVG map — give labels more vertical room on small screens */
+@media (max-width: 560px) {
+  .map-panel { aspect-ratio: 4/5; }
+  .map-label { font-size: 13px; }
+}
+
+/* 4. Onboarding step indicator + multi-select */
+@media (max-width: 560px) {
+  .step-indicator { flex-wrap: wrap; gap: 10px 6px; }
+  .step-indicator .step-pill { flex: 1 1 45%; font-size: 11.5px; }
+  select[multiple] { font-size: 14px; }
+}
+
+/* 5. Cert / contact rows — tighten padding on very small screens */
+@media (max-width: 400px) {
+  .cert-item { padding: 18px 16px; gap: 14px; }
+  .contact-block { gap: 12px; }
+}
+
+/* 6. .page-hero heading/text sizing wasn't scaled down for small screens
+   (only .hero h1 was — .page-hero h1 was missed) */
+@media (max-width: 640px) {
+  .page-hero { padding: 120px 0 48px; }
+  .page-hero h1 { font-size: 30px; }
+  .page-hero p { font-size: 15.5px; }
+}
+
+/* 7. cta-banner heading was left unscaled below 640px */
+@media (max-width: 480px) {
+  .cta-banner h2 { font-size: 26px; }
+  .cta-banner .btn-row { flex-direction: column; align-items: stretch; }
+  .cta-banner .btn-row .btn { width: 100%; justify-content: center; }
+}
+
+/* 8. hero-ctas buttons should stack full-width on very small screens */
+@media (max-width: 420px) {
+  .hero-ctas .btn { width: 100%; justify-content: center; }
+}
+
+/* 9. rfq-summary loses its sticky offset usefulness once it's full-width
+   under the stacked .rfq-layout; unstick it so it doesn't float oddly */
+@media (max-width: 860px) {
+  .rfq-summary { position: static; }
+}
+
+/* 10. process-flow horizontal scroll — add a visual affordance since
+   overflow-x scroll isn't obvious on touch without a scrollbar */
+@media (max-width: 768px) {
+  .process-flow { padding-bottom: 14px; }
+  .process-step { flex: 0 0 78vw; }
+}
