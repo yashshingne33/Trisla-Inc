@@ -176,10 +176,34 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 .nav-toggle span { width: 22px; height: 2px; background: var(--charcoal); display: block; transition: transform 0.25s var(--ease), opacity 0.25s var(--ease); }
 
+/* Header now renders .nav-links twice: once inline (desktop) inside
+   .nav-desktop, and once portaled to <body> (.nav-mobile-portal) so the
+   mobile overlay isn't affected by .site-header's backdrop-filter, which
+   otherwise becomes the containing block for position:fixed descendants
+   and collapses the panel's height. Only one copy is ever visible. */
+
+.nav-mobile-portal { display: none; }
+
 @media (max-width: 900px) {
-  .nav-links { position: fixed; top: 76px; left: 0; right: 0; bottom: 0; background: var(--ivory); flex-direction: column; padding: 32px; gap: 4px; transform: translateX(100%); transition: transform 0.3s var(--ease); overflow-y: auto; }
-  .nav-links.is-open { transform: translateX(0); }
-  .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+  .nav-desktop { display: none; }
+  .nav-mobile-portal { display: block; }
+
+  .nav-mobile-portal .nav-links {
+    position: fixed;
+    top: 76px; left: 0; right: 0;
+    height: calc(100vh - 76px);
+    background: var(--ivory);
+    flex-direction: column;
+    padding: 32px;
+    gap: 4px;
+    transform: translateX(100%);
+    transition: transform 0.3s var(--ease);
+    overflow-y: auto;
+    z-index: 600;
+  }
+  .nav-mobile-portal .nav-links.is-open { transform: translateX(0); }
+  .nav-mobile-portal .nav-links a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 17px; }
+
   .nav-toggle { display: flex; }
   .header-actions .btn { display: none; }
 }
@@ -196,6 +220,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   }
   .nav-actions-mobile .btn { width: 100%; justify-content: center; }
 }
+
+.nav-toggle.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 /* ==========================================================================
    Buttons
