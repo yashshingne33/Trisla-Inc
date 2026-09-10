@@ -153,8 +153,7 @@ const products = [
     shortDesc: 'Molasses-infused blends engineered for moisture retention and flavor stability.',
     positioning: 'Molasses-infused tobacco blends engineered for moisture retention, flavor stability and consistent burn during use.',
     tags: ['Molasses Infusion', 'Flavor Stability', 'Sealed Packaging'],
-    image: 'https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=1200&auto=format&fit=crop',
-    imageCard: 'https://images.unsplash.com/photo-1610632380989-680fe40816c6?q=80&w=800&auto=format&fit=crop',
+    image: '/assets/hookah-tobacco.jpg',
     alt: 'Rich golden-brown molasses-infused hookah tobacco blend',
     packagingHint: '1kg resealable pouches',
     specs: [

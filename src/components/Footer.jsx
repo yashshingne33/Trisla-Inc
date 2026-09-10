@@ -17,6 +17,7 @@ export default function Footer() {
               <li><Link to="/about#infrastructure">Infrastructure</Link></li>
               <li><Link to="/quality">Quality &amp; Compliance</Link></li>
               <li><Link to="/exports">Global Footprint</Link></li>
+              <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
           <div>
@@ -42,9 +43,9 @@ export default function Footer() {
           <div>
             <h5>CONTACT</h5>
             <ul>
-              <li><a href="mailto:export@meridianleaf.example">export@meridianleaf.example</a></li>
-              <li><a href="tel:+912233445566">+91 22 3344 5566</a></li>
-              <li>Guntur, Andhra Pradesh, India</li>
+              <li><a href="mailto:info@trislainc.com">info@trislainc.com</a></li>
+              <li><a href="tel:+919890777000">+91 98907 77000</a></li>
+              <li>Nagpur, Maharashtra, India</li>
             </ul>
           </div>
         </div>
