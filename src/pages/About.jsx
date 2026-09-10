@@ -22,7 +22,7 @@ export default function About() {
             <p>Over two and a half decades we have expanded from a single processing unit into an integrated export house spanning six product categories, an in-house testing laboratory, and direct relationships with growers across multiple states. What hasn't changed is the standard: every batch is specified, tested and documented before it is offered to a buyer.</p>
           </div>
           <div className="split-media">
-            <img src="https://images.unsplash.com/photo-1595750448323-1b4e9dfb47f8?q=80&w=1200&auto=format&fit=crop" alt="Tobacco processing facility interior" loading="lazy" />
+            <img src="/assets/tobacco-processing.jpg" alt="Tobacco processing facility interior" loading="lazy" />
           </div>
         </div>
       </section>
@@ -58,13 +58,13 @@ export default function About() {
             <span className="eyebrow">Why global buyers choose us</span>
             <h2 className="font-display display-lg">Six reasons procurement teams stay with Trisla Inc.</h2>
           </div>
-          <div className="feature-grid" style={{ background: 'var(--line)', borderColor: 'var(--line)' }}>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Reliable Sourcing</h4><p>Multi-region grower relationships that reduce single-harvest risk.</p></div>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Technical Consistency</h4><p>Fixed specifications held across every production run.</p></div>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Export Expertise</h4><p>In-house teams fluent in the paperwork of 30+ destination markets.</p></div>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Quality Assurance</h4><p>Batch-level laboratory testing with certificates of analysis.</p></div>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Documentation Support</h4><p>Phytosanitary, customs and licensing paperwork prepared ahead of shipment.</p></div>
-            <div className="feature-cell" style={{ background: 'var(--white)' }}><h4>Scalable Supply</h4><p>From trial lots to full container programs, without renegotiating quality.</p></div>
+          <div className="feature-grid">
+            <div className="feature-cell feature-cell--on-tint"><h4>Reliable Sourcing</h4><p>Multi-region grower relationships that reduce single-harvest risk.</p></div>
+            <div className="feature-cell feature-cell--on-tint"><h4>Technical Consistency</h4><p>Fixed specifications held across every production run.</p></div>
+            <div className="feature-cell feature-cell--on-tint"><h4>Export Expertise</h4><p>In-house teams fluent in the paperwork of 30+ destination markets.</p></div>
+            <div className="feature-cell feature-cell--on-tint"><h4>Quality Assurance</h4><p>Batch-level laboratory testing with certificates of analysis.</p></div>
+            <div className="feature-cell feature-cell--on-tint"><h4>Documentation Support</h4><p>Phytosanitary, customs and licensing paperwork prepared ahead of shipment.</p></div>
+            <div className="feature-cell feature-cell--on-tint"><h4>Scalable Supply</h4><p>From trial lots to full container programs, without renegotiating quality.</p></div>
           </div>
         </div>
       </section>
